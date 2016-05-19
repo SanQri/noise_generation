@@ -8,10 +8,17 @@ namespace NoiseGeneration
 {
     class NoiseCell
     {
-        public int x { get; set; }
-        public int y { get; set; }
+        public int x = 0;
+        public int y = 0;
+        public enum State
+        {
+            white = 0,
+            grey = 1,
+            black = 2
+        }
+        public State state = State.white;
 
-        public double value { get; set; }
+        public double value = 1;
 
 
     }
